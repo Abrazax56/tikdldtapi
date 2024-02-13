@@ -1,24 +1,21 @@
 import express from "express";
 import { TiktokDL } from "@tobyg74/tiktok-api-dl";
 import cors from "cors";
-import fs from 'fs'
 
 const app = express();
 const port = 3000;
-const htmls = fs.readFileSync('./src/main.html');
 
 app.use(cors());
 app.set('json spaces', 2);
 
 app.get('/', (req, res) => {
-  res.send(htmls.toString());
-  /*res.json({
+  res.json({
       "name": "tikdldtapi",
       "author": "ahmadbenirusli",
       "version": "1.0.0",
       "usage": "https://tikdldtapi.vercel.app/download?url=<YOUR_TIKTOK_URL>",
       "caution": "this api is not legal just experimental, don't use for production"
-    });*/
+    });
 });
 
 app.get('/download', async(req, res) => {
