@@ -8,7 +8,7 @@ const port = 3000;
 app.use(cors());
 app.set('json spaces', 2);
 
-app.get('/api/main', async(req, res) => {
+app.get('/api/index', async(req, res) => {
   if (req.query.url === '') {
     res.json({
       "name": "tikapidl",
