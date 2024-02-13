@@ -1,15 +1,29 @@
 import express from "express";
 import { TiktokDL } from "@tobyg74/tiktok-api-dl";
+import cors from "cors"
 
 const app = express();
 const port = 3000;
 
+app.use(cors());
+app.set('json spaces', 2);
+
 app.get('/api/main', async(req, res) => {
-  await TiktokDL(req.query.url, {
-    version: "v3"
-  }).then((result) => {
-    res.json(result);
-  });
+  if (req.query.url === '') {
+    res.json({
+      "name": "tikapidl",
+      "author": "ahmadbenirusli",
+      "version": "1.0.0",
+      "usage": "https://tikdldtapi.vercel.app/api/main?url=<YOUR_TIKTOK_URL>",
+      "caution": "this api is not legal just experimental, don't use for production"
+    })
+  } else {
+    await TiktokDL(req.query.url, {
+      version: "v3"
+    }).then((result) => {
+      res.json(result);
+    });
+  }
 });
 
 app.listen(port, () => {
