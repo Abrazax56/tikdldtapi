@@ -16,7 +16,7 @@ app.get('/api/main', async(req, res) => {
       "version": "1.0.0",
       "usage": "https://tikdldtapi.vercel.app/api/main?url=<YOUR_TIKTOK_URL>",
       "caution": "this api is not legal just experimental, don't use for production"
-    })
+    });
   } else {
     await TiktokDL(req.query.url, {
       version: "v3"
@@ -25,7 +25,16 @@ app.get('/api/main', async(req, res) => {
     });
   }
 });
-
+app.use('/', (req, res) => {
+  res.status(404);
+  res.json({
+      "name": "tikdldtapi",
+      "author": "ahmadbenirusli",
+      "version": "1.0.0",
+      "usage": "https://tikdldtapi.vercel.app/api/main?url=<YOUR_TIKTOK_URL>",
+      "caution": "this api is not legal just experimental, don't use for production"
+    });
+});
 app.listen(port, () => {
   console.log('app is running')
 });
