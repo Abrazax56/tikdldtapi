@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
       "name": "tikdldtapi",
       "author": "ahmadbenirusli",
       "version": "1.0.0",
-      "usage": "https://tikdldtapi.vercel.app/api/main?url=<YOUR_TIKTOK_URL>",
+      "usage": "https://tikdldtapi.vercel.app/download?url=<YOUR_TIKTOK_URL>",
       "caution": "this api is not legal just experimental, don't use for production"
     });
 });
@@ -24,7 +24,7 @@ app.get('/download', async(req, res) => {
       "name": "tikapidl",
       "author": "ahmadbenirusli",
       "version": "1.0.0",
-      "usage": "https://tikdldtapi.vercel.app/api/main?url=<YOUR_TIKTOK_URL>",
+      "usage": "https://tikdldtapi.vercel.app/download?url=<YOUR_TIKTOK_URL>",
       "caution": "this api is not legal just experimental, don't use for production"
     });
   } else {
@@ -41,7 +41,7 @@ app.use('/', (req, res) => {
       "name": "tikdldtapi",
       "author": "ahmadbenirusli",
       "version": "1.0.0",
-      "usage": "https://tikdldtapi.vercel.app/api/main?url=<YOUR_TIKTOK_URL>",
+      "usage": "https://tikdldtapi.vercel.app/download?url=<YOUR_TIKTOK_URL>",
       "caution": "this api is not legal just experimental, don't use for production"
     });
 });
