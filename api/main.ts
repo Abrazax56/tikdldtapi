@@ -1,14 +1,10 @@
 import express from "express";
-import { TiktokDL } from "@tobyg74/tiktok-api-dl"
+import { TiktokDL } from "@tobyg74/tiktok-api-dl";
 
 const app = express();
 const port = 3000;
 
-app.get('/api/main', (req, res) => {
-  res.send('Hello World')
-})
-
-app.get('/tiktok', async(req, res) => {
+app.get('/api/main', async(req, res) => {
   await TiktokDL(req.query.url, {
     version: "v3"
   }).then((result) => {
@@ -16,6 +12,6 @@ app.get('/tiktok', async(req, res) => {
   });
 });
 
-/*app.listen(port, () => {
+app.listen(port, () => {
   console.log('app is running')
-})*/
+});
