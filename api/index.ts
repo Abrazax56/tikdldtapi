@@ -5,7 +5,7 @@ import fs from 'fs'
 
 const app = express();
 const port = 3000;
-const htmls = fs.readFileSync('./main.html');
+const htmls = fs.readFileSync('.././src/main.html');
 
 app.use(cors());
 app.set('json spaces', 2);
