@@ -1,5 +1,5 @@
 {
-  "buildCommand": "bun run build",
+  "buildCommand": "bun build ./api/main.ts --compile --minify --outfile ./public/output",
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ]
