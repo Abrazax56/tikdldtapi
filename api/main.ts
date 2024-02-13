@@ -1,19 +1,8 @@
-import type { Server } from "bun"
+const server = Bun.serve({
+  port: 3000,
+  fetch(request) {
+    return new Response("Welcome to Bun!");
+  },
+});
 
-async fetch(request: Request, server: Server) {
-    let text = "Hello from Bun on Vercel!\n"
-
-    text += `\nurl: ${request.url}\n`
-
-    for (const [key, value] of request.headers.entries()) {
-      if (!key.startsWith("x-vercel")) continue
-      text += `\n${key}: ${value}`
-    }
-
-    return new Response(text, {
-      status: 200,
-      headers: {
-        "Content-Type": "text/plain;charset=utf-8",
-      },
-    })
-  }
+console.log(`Listening on localhost:${server.port}`);
