@@ -9,6 +9,6 @@
   },
   "scripts": {
     "dev": "bun run ./api/main.ts",
-    "build": "bun build ./api/main.ts --compile --minify --outfile .vercel/output/functions/App.func/app"
+    "build": "bun build ./api/main.ts --compile --minify --outdir ./public"
   }
 }
