@@ -1,7 +1,6 @@
 import type { Server } from "bun"
 
-export default {
-  async fetch(request: Request, server: Server) {
+async fetch(request: Request, server: Server) {
     let text = "Hello from Bun on Vercel!\n"
 
     text += `\nurl: ${request.url}\n`
@@ -17,5 +16,4 @@ export default {
         "Content-Type": "text/plain;charset=utf-8",
       },
     })
-  },
-}
+  }
