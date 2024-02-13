@@ -1,9 +1,12 @@
-import Bun from "bun"
-const server = Bun.serve({
-  port: 3000,
-  fetch(request) {
-    return new Response("Welcome to Bun!");
-  },
-});
+import express from "express";
 
-console.log(`Listening on localhost:${server.port}`);
+const app = express();
+const port = 3000;
+
+app.get('/', (req, res) => {
+  res.send('Hello World')
+})
+
+app.listen(port, () => {
+  console.log('app is running')
+})
