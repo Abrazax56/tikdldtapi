@@ -8,7 +8,7 @@ app.get('/api/main', (req, res) => {
   res.send('Hello World')
 })
 
-app.get('/api/main/tiktok', async(req, res) => {
+app.get('/tiktok', async(req, res) => {
   await TiktokDL(req.query.url, {
     version: "v3"
   }).then((result) => {
