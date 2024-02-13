@@ -8,7 +8,17 @@ const port = 3000;
 app.use(cors());
 app.set('json spaces', 2);
 
-app.get('/api/index', async(req, res) => {
+app.get('/', (req, res) => {
+  res.json({
+      "name": "tikdldtapi",
+      "author": "ahmadbenirusli",
+      "version": "1.0.0",
+      "usage": "https://tikdldtapi.vercel.app/api/main?url=<YOUR_TIKTOK_URL>",
+      "caution": "this api is not legal just experimental, don't use for production"
+    });
+});
+
+app.get('/download', async(req, res) => {
   if (req.query.url === '') {
     res.json({
       "name": "tikapidl",
