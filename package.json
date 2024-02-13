@@ -3,6 +3,7 @@
   "version": "1.0.0-alpha.5",
   "type": "module",
   "devDependencies": {
+    "@tobyg74/tiktok-api-dl": "1.0.13",
     "bun-types": "^1.0.2",
     "express": "^4.17.1",
     "prettier": "^3.0.3",
