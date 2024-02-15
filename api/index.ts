@@ -21,7 +21,7 @@ const htmls = `
     <span class="props">"address"</span>: <span class="value">"Rt 03, Rw 05, Nusadadi, Tinggarjaya, Sidareja, Cilacap, Jawa Tengah"</span>,
     <span class="props">"age"</span>: <span class="value">"19 y.o"</span>,
     <span class="props">"whatsapp"</span>: <span class="value"><a href="https://wa.me/6288216018165" target="_blank" class="value">"+62 882-1601-8165"</a></span>,
-    <span class="kurung">},</span>
+  <span class="kurung">},</span>
   <span class="props">"caution"</span>: <span class="value">"This api platform is not legal, don't use for production!"</span>
 <span class="kurung">}</span>
 </pre></div></body></html>
