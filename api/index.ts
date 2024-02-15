@@ -1,7 +1,7 @@
 import express from "express";
 import { TiktokDL } from "@tobyg74/tiktok-api-dl";
 import cors from "cors";
-import fs from "fs":
+import fs from "fs";
 
 const app = express();
 const port = 3000;
@@ -40,7 +40,7 @@ app.get('/download', async(req, res) => {
 });
 app.get('/htmls', (req, res) => {
   res.send(htmls.toString());
-})
+});
 app.get('/favicon.ico', (req, res) => {
   res.json({null: "ok"})
 });
