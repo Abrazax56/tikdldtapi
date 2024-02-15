@@ -15,12 +15,12 @@ const htmls = `
   <span class="props">"name"</span>: <span class="value">"tikdldtapi"</span>,
   <span class="props">"version"</span>: <span class="value">"1.0.8"</span>,
   <span class="props">"description"</span>: <span class="value">"Tiktok api media downloader"</span>,
-  <span class="props">"usage"</span>: <span class="value"><a href="https://tikdldtapi.vercel.app/download?url=https://vt.tiktok.com/ZSFY3w9qk/" target="_blank" class="value">"https://tikdldtapi.vercel.app/download?url=YOUR_TIKTOK_URL"</a></span>,
+  <span class="props">"usage"</span>: <span class="value">"<a href="https://tikdldtapi.vercel.app/download?url=https://vt.tiktok.com/ZSFY3w9qk/" target="_blank" class="value">https://tikdldtapi.vercel.app/download?url=YOUR_TIKTOK_URL</a>"</span>,
   <span class="props">"author"</span>: <span class="kurung">{</span>
     <span class="props">"name"</span>: <span class="value">"Ahmad Beni Rusli"</span>,
     <span class="props">"address"</span>: <span class="value">"Rt 03, Rw 05, Nusadadi, Tinggarjaya, Sidareja, Cilacap, Jawa Tengah"</span>,
     <span class="props">"age"</span>: <span class="value">"19 y.o"</span>,
-    <span class="props">"whatsapp"</span>: <span class="value"><a href="https://wa.me/6288216018165" target="_blank" class="value">"+62 882-1601-8165"</a></span>,
+    <span class="props">"whatsapp"</span>: <span class="value">"<a href="https://wa.me/6288216018165" target="_blank" class="value">+62 882-1601-8165</a>"</span>,
   <span class="kurung">},</span>
   <span class="props">"caution"</span>: <span class="value">"This api platform is not legal, don't use for production!"</span>
 <span class="kurung">}</span>
