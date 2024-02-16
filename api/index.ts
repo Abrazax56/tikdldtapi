@@ -47,7 +47,7 @@ const resultHTMLvideo = ( status: string, type: string, music: string, video: st
 
 const resultHTMLimage = ( status: string, type: string, music: string, images: any ) => {
   let imageRess: string = ``;
-  images.forEach(imgUrl => {
+  images.forEach((imgUrl: string) => {
     imageRess += `<span class="value">"${imgUrl}",</span> `
   })
   return `
@@ -119,7 +119,7 @@ app.get('/download/:type', async(req, res) => {
             ));
           }
         }).catch((err) => {
-          res.send(errorResult("url or system is incorrect"));
+          res.send(errorResult("url or system was incorrect"));
         });
       } else {
         res.send(errorResult("url is required!"));
