@@ -139,7 +139,7 @@ app.get('/favicon.ico', (req, res) => {
 });
 app.get('/test', (req, res) => {
   const file = path.join(process.cwd(), 'files', 'test.json');
-  const stringified = readFileSync(file, 'utf8');
+  const stringified = fs.readFileSync(file, 'utf8');
   res.json(stringified);
 })
 app.use('/', (req, res) => {
