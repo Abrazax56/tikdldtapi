@@ -139,8 +139,8 @@ app.get('/favicon.ico', (req, res) => {
 });
 app.get('/test', (req, res) => {
   const file = path.join(process.cwd(), 'files', 'vercel.json');
-  const stringified = fs.readFileSync(file, 'utf8');
-  res.json(stringified);
+  //const stringified = fs.readFileSync(file, 'utf8');
+  res.json(file);
 })
 app.use('/', (req, res) => {
   res.status(404);
