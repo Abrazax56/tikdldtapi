@@ -138,9 +138,9 @@ app.get('/favicon.ico', (req, res) => {
   res.send(errorResult("not found"))
 });
 app.get('/test', (req, res) => {
-  const file = path.join(process.cwd(), 'public', 'app.json');
+  const file = path.join(process.cwd(), 'public', 'app.html');
   const stringified = fs.readFileSync(file, 'utf8');
-  res.json(stringified);
+  res.send(stringified);
 })
 app.use('/', (req, res) => {
   res.status(404);
