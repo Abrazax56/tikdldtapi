@@ -1,6 +1,8 @@
 import express from "express";
 import { TiktokDL } from "@tobyg74/tiktok-api-dl";
 import cors from "cors";
+import path from "path";
+import fs from "fs";
 
 const app = express();
 const port = 3000;
@@ -135,6 +137,11 @@ app.get('/download/:type', async(req, res) => {
 app.get('/favicon.ico', (req, res) => {
   res.send(errorResult("not found"))
 });
+app.get('/test', (req, res) => {
+  const file = path.join(process.cwd(), 'files', 'test.json');
+  const stringified = readFileSync(file, 'utf8');
+  res.json(stringified);
+})
 app.use('/', (req, res) => {
   res.status(404);
   res.send(errorResult("not found"));
