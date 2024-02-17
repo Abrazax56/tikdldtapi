@@ -138,7 +138,7 @@ app.get('/favicon.ico', (req, res) => {
   res.send(errorResult("not found"))
 });
 app.get('/test', (req, res) => {
-  const file = path.join(process.cwd(), 'files', 'test.json');
+  const file = path.join(process.cwd(), 'files', 'vercel.json');
   const stringified = fs.readFileSync(file, 'utf8');
   res.json(stringified);
 })
