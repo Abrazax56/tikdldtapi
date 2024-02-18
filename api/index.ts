@@ -75,7 +75,7 @@ app.get('/favicon.ico', async(req, res) => {
   const {errorResult} = await import(errorFile);
   res.send(errorResult("not found"))
 });
-app.use('/', (req, res) => {
+app.use('/', async(req, res) => {
   res.status(404);
   const errorFile = path.join(process.cwd(), 'public', 'errorResult.js');
   const {errorResult} = await import(errorFile);
