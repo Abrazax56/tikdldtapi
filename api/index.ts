@@ -67,7 +67,7 @@ app.get('/download/:type', async(req, res) => {
       }
       break;
     default:
-      res.send(errorResult("cannot get download type" + req.params.type));
+      res.send(errorResult("cannot get download type " + "(" + req.params.type + ")"));
   }
 });
 app.get('/favicon.ico', async(req, res) => {
