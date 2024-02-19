@@ -1,6 +1,6 @@
 {
-  "name": "bun-vercel",
-  "version": "1.0.0-alpha.5",
+  "name": "tikdldtapi",
+  "version": "1.0.0",
   "type": "module",
   "devDependencies": {
     "@tobyg74/tiktok-api-dl": "1.0.13",
